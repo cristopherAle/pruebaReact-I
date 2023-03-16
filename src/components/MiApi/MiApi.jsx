@@ -14,7 +14,7 @@ const MiApi = props => {
           getRickAndMorty()
     },[])
   
-    const getRickAndMorty = async()=>{
+        const getRickAndMorty = async()=>{
         const response = await fetch(urlApi)
         const data = await response.json()
         setDataRickAndMorty(data.results)
